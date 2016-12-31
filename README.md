@@ -12,8 +12,8 @@ Last year, I started with public speaking, which is a lot of fun. Meanwhile, I t
 
 I much enjoy **climbing**, either **bouldering** indoor or rope climbing outside, besides that **hiking** is just great.   
 And from time to time, I write articles such as the following.
-- [How to mess up talking on stage.](https://www.webguys.de/diverses/how-to-mess-up-talking-on-stage)
-- [Magento Frontend mit Bootstrap SCSS](https://www.webguys.de/magento-1/tuerchen-18-magento-frontend-mit-bootstrap-scss)
+- [How to mess up talking on stage.](https://www.webguys.de/diverses/how-to-mess-up-talking-on-stage)  
+- [Magento Frontend mit Bootstrap SCSS](https://www.webguys.de/magento-1/tuerchen-18-magento-frontend-mit-bootstrap-scss)  
 - [What you think others might think about you… is wrong.](https://medium.com/@ToH_82/what-you-think-what-others-might-think-about-you-f9fcb8d1afd0#.8ic01ehhp)
 
 ## Coding Languages
