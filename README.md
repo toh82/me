@@ -16,6 +16,7 @@ And from time to time, I write articles such as the following.
 - [How to mess up talking on stage.](https://www.webguys.de/diverses/how-to-mess-up-talking-on-stage)  
 - [Magento Frontend mit Bootstrap SCSS](https://www.webguys.de/magento-1/tuerchen-18-magento-frontend-mit-bootstrap-scss)  
 - [What you think others might think about you… is wrong.](https://medium.com/@ToH_82/what-you-think-what-others-might-think-about-you-f9fcb8d1afd0#.8ic01ehhp)
+- [Bohnenkaffee und was daraus wurde oder auch: Früher war alles viel besser.](https://medium.com/@ToH_82/bohnenkaffee-und-was-daraus-wurde-9ec501938be1#.sloj69qrp)
 
 ## Coding Languages
 **CSS**,
@@ -41,7 +42,8 @@ And from time to time, I write articles such as the following.
 **PHP Storm**,
 **Adobe Photoshop**,
 **Adobe Lightroom**,
-**Adobe Illustrator**
+**Adobe Illustrator**,
+**Adobe InDesign**
 
 ## Talks
 - [How to mess up talking on a stage](http://slides.com/tobiashartmann/how-to-mess-up-talking)
