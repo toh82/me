@@ -49,3 +49,10 @@ And from time to time, I write articles such as the following.
 - [How to mess up talking on a stage](http://slides.com/tobiashartmann/how-to-mess-up-talking)
 - [Butterbrot fürs Design](http://slides.com/tobiashartmann/butterbrot)
 - [How to deal with styles in Magento 2](https://slidr.io/toh82/how-to-deal-with-styles-in-magento-2#1)
+
+## Contact
+E-Mail: hartmann.tobias@gmail.com  
+Twitter: [ToH_82](https://twitter.com/ToH_82)  
+
+And if you want to tell me something anonyme  
+- [Tellonym: toh82](https://tellonym.de/u/toh82)  
