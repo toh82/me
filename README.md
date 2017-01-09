@@ -1,6 +1,9 @@
-# Hey ya, I'm Tobias Hartmann
+---
+layout: start
+title: Hey ya, I'm Tobias Hartmann
+---
 
-... a main time developer, hobby designer and photographer.
+Main time developer, hobby designer and photographer.
 
 After 10 years of web design and frontend coding, I started heavily working with JavaScript, CSS preprocessors and Magento about 4 years ago. Starting as a junior frontend developer at a big company, I made my way through smaller design agencies as a technical project lead, frontend concept engineer, designer and developer. As a trained designer and mainly self-learned frontend developer, I really enjoy the powers of both worlds and love to combine them, to make awesome projects. Nowadays I work as a lead frontend developer for e-commerce projects at [**Sitewards**](http://www.sitewards.com/).
 
