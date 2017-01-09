@@ -1,6 +1,5 @@
 ---
 layout: start
-title: Hey ya, I'm Tobias Hartmann
 ---
 
 Main time developer, hobby designer and photographer.
