@@ -2,8 +2,6 @@
 layout: start
 ---
 
-Main time developer, hobby designer and photographer.
-
 After 10 years of web design and frontend coding, I started heavily working with JavaScript, CSS preprocessors and Magento about 4 years ago. Starting as a junior frontend developer at a big company, I made my way through smaller design agencies as a technical project lead, frontend concept engineer, designer and developer. As a trained designer and mainly self-learned frontend developer, I really enjoy the powers of both worlds and love to combine them, to make awesome projects. Nowadays I work as a lead frontend developer for e-commerce projects at [**Sitewards**](http://www.sitewards.com/).
 
 I love contributing to open source projects and community work in general, because of the huge amount of power which a community can share. My strengths are solving structural issues with HTML and stylesheets, writing styles, designing/developing user interfaces for apps and shops.
