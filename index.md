@@ -6,17 +6,17 @@ After 10 years of web design and frontend coding, I started heavily working with
 
 I love contributing to open source projects and community work in general, because of the huge amount of power which a community can share. My strengths are solving structural issues with HTML and stylesheets, writing styles, designing/developing user interfaces for apps and shops.
 
-Last year, I started with public speaking, which is a lot of fun. Meanwhile, I talked on conferences like the **MeetMagento Switzerland** and the **MeetMagento Netherland**, also on several user groups like the [**MobileDevFFM**](https://twitter.com/MobileDevFfm) or unconferences like the [**Mage Unconference**](http://www.mageunconference.org/). My talks are about **Magento**, **Wireframes**, **talking on stage** and **developer feelings**. If you're interested, you find links to the Slides just a little scroll down.  
+Last year, I started with public speaking, which is a lot of fun. Meanwhile, I talked on conferences like the **MeetMagento Switzerland** and the **MeetMagento Netherland**. Also on several user groups like the [**MobileDevFFM**](https://twitter.com/MobileDevFfm) or unconferences like the [**Mage Unconference**](http://www.mageunconference.org/). My talks are about **Magento**, **Wireframes**, **talking on stage** and **developer feelings**. If you're interested, you find links to the Slides just a little scroll down.  
 
 ### What else
 
-I much enjoy **climbing**, either **bouldering** indoor or rope climbing outside, besides that **hiking** is just great.   
+I enjoy **climbing**, either **bouldering**, indoor or rope climbing outside. Besides that, **hiking** and **cycling** are great, giving me time to relax and discover nature.
 And from time to time, I write articles such as the following.
 
-- [How to mess up talking on stage.](https://www.webguys.de/diverses/how-to-mess-up-talking-on-stage)  
-- [Magento Frontend mit Bootstrap SCSS](https://www.webguys.de/magento-1/tuerchen-18-magento-frontend-mit-bootstrap-scss)  
-- [What you think others might think about you… is wrong.](https://medium.com/@ToH_82/what-you-think-what-others-might-think-about-you-f9fcb8d1afd0#.8ic01ehhp)
-- [Bohnenkaffee und was daraus wurde oder auch: Früher war alles viel besser.](https://medium.com/@ToH_82/bohnenkaffee-und-was-daraus-wurde-9ec501938be1#.sloj69qrp)
+- [(EN) Magento Frontend mit Bootstrap SCSS](https://www.webguys.de/magento-1/tuerchen-18-magento-frontend-mit-bootstrap-scss)  
+- [(EN) What you think others might think about you… is wrong.](https://medium.com/@ToH_82/what-you-think-what-others-might-think-about-you-f9fcb8d1afd0#.8ic01ehhp)
+- [(DE) How to mess up talking on stage.](https://www.webguys.de/diverses/how-to-mess-up-talking-on-stage)  
+- [(DE) Bohnenkaffee und was daraus wurde oder auch: Früher war alles viel besser.](https://medium.com/@ToH_82/bohnenkaffee-und-was-daraus-wurde-9ec501938be1#.sloj69qrp)
 
 ## Coding Languages
 **CSS**,
@@ -46,6 +46,7 @@ And from time to time, I write articles such as the following.
 **Adobe InDesign**
 
 ## Talks
+- [OOCSS BEM WTF - how to organize your css and what really matters](http://toh82.github.io/oocss_bem_slides)
 - [How to mess up talking on a stage](http://slides.com/tobiashartmann/how-to-mess-up-talking)
 - [Butterbrot fürs Design](http://slides.com/tobiashartmann/butterbrot)
 - [How to deal with styles in Magento 2](https://slidr.io/toh82/how-to-deal-with-styles-in-magento-2#1)
