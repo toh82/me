@@ -1,0 +1,7 @@
+@import "hack/dist/hack.css";
+
+.grid {
+  .cell {
+    padding: 10px;
+  }
+}

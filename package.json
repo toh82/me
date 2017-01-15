@@ -1,0 +1,17 @@
+{
+  "name": "toh82",
+  "version": "1.0.0",
+  "description": "Personal website of Tobias Hartmann",
+  "author": "Tobias Hartmann<hartmann.tobias@gmail.com>",
+  "devDependencies": {
+    "hack": "^0.7.7",
+    "handlebars": "^4.0.6",
+    "autoprefixer": "^6.6.1",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "postcss-import": "^9.1.0",
+    "precss": "^1.4.0"
+  }
+}
