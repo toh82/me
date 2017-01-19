@@ -1,7 +1,32 @@
 @import "hack/dist/hack.css";
 
-.grid {
-  .cell {
-    padding: 10px;
+:root {
+  --brand-primary: #00b38d;
+  --brand-secondary: #404c4d;
+}
+
+.hack--toh {
+  color: var(--brand-secondary);
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    .cell {
+      padding: 10px;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    color: var(--brand-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--brand-primary);
+
+    &:hover {
+      background-color: var(--brand-primary);
+      color: #fff;
+    }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "toh82",
+  "version": "1.0.0",
+  "short_name": "toh82",
+  "author": "Tobias Hartmann",
+  "lang": "en-UK",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#404c4d",
+  "background_color": "#404c4d",
+  "related_applications": [{
+    "platform": "web"
+  }]
+}
