@@ -1,5 +1,5 @@
 node_modules
 
-web/js
-web/css
-web/*.html
+web/assets/js
+web/assets/css
+web/**/*.html

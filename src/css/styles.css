@@ -1,3 +1,4 @@
+@import "normalize-css/normalize.css";
 @import "hack/dist/hack.css";
 
 :root {
@@ -5,17 +6,17 @@
   --brand-secondary: #404c4d;
 }
 
+@custom-media --break-small (min-width: 480px);
+@custom-media --break-medium (min-width: 768px);
+@custom-media --break-big (min-width: 992px);
+@custom-media --break-huge (min-width: 1200px);
+
 .hack--toh {
   color: var(--brand-secondary);
+  letter-spacing: -0.01em;
 
   h1 {
     font-size: 1.5rem;
-  }
-
-  .grid {
-    .cell {
-      padding: 10px;
-    }
   }
 
   a {
@@ -29,4 +30,7 @@
       color: #fff;
     }
   }
+
+  @import "figure.css";
+  @import "grid.css";
 }

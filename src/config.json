@@ -1,5 +1,9 @@
 {
   "site": {
+    "url": {
+      "base": "http://www.toh82.de/",
+      "static": "http://static.toh82.de/"
+    },
     "google_analytics": "UA-61312162-2",
     "header": {
       "title_prefix": "toh82",

@@ -1,0 +1,9 @@
+.container {
+  max-width: 60rem;
+}
+
+.grid {
+  .cell {
+    padding: 10px;
+  }
+}
