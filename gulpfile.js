@@ -7,7 +7,8 @@ gulp.task('hbs', function () {
         ignorePartials: true,
         batch: ['./src/partials'],
         helpers: {
-          formatTags: require('./script/helper/formatTags')
+          formatTags: require('./script/helper/formatTags'),
+          articleList: require('./script/helper/articleList')
         }
     }
 

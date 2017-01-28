@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{> htmlheader}}
+    <title>{{site.header.title_prefix}} - Blog</title>
+
+    {{> analytics}}
+  </head>
+  <body class="hack  hack--toh">
+    <div class="container">
+      <header>
+        <h1>Blog <span class="subline">bzw. alles was mir einfällt zu schreiben</span></h1>
+      </header>
+    </div>
+    <div class="main container">
+      {{#articleList 'posts'}}
+        {{> articleCard}}
+      {{/articleList}}
+    </div>
+    {{> footer}}
+  </body>
+</html>

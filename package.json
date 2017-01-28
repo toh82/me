@@ -5,6 +5,7 @@
   "author": "Tobias Hartmann<hartmann.tobias@gmail.com>",
   "devDependencies": {
     "autoprefixer": "^6.6.1",
+    "cheerio": "^0.22.0",
     "gulp": "^3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-postcss": "^6.2.0",
