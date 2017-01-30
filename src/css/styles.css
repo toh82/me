@@ -31,6 +31,7 @@
     }
   }
 
-  @import "figure.css";
-  @import "grid.css";
+  @import "figure";
+  @import "grid";
+  @import "card";
 }

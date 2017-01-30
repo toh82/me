@@ -17,7 +17,8 @@ function articleList (folder, options) {
       title: $('header > h1').text(),
       author: $('header > .author').text(),
       intro: $('.main > p.intro').text(),
-      link: file.replace(baseFolder, '')
+      link: file.replace(baseFolder, ''),
+      lang: $('html').attr('lang')
     })
 
   });

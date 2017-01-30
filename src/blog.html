@@ -9,13 +9,15 @@
   <body class="hack  hack--toh">
     <div class="container">
       <header>
-        <h1>Blog <span class="subline">bzw. alles was mir einfällt zu schreiben</span></h1>
+        <h1>Blog</h1>
       </header>
     </div>
     <div class="main container">
-      {{#articleList 'posts'}}
-        {{> articleCard}}
-      {{/articleList}}
+      <div class="grid">
+        {{#articleList 'posts'}}
+          <div class="cell  -4of12">{{> articleCard}}</div>
+        {{/articleList}}
+      </div>
     </div>
     {{> footer}}
   </body>

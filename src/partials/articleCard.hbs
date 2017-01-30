@@ -1,5 +1,12 @@
 <div class="card">
-  <h2><a href="{{link}}">{{title}}</a></h2>
-  <p>{{author}}</p>
-  <p>{{intro}}</p>
+  <header class="card-header">
+    <h2><a href="{{link}}">{{title}}</a> ({{lang}})</h2>
+    <p>{{author}}</p>
+  </header>
+  <div class="card-content">
+    <div class="inner">
+      <p>{{intro}}</p>
+      <a href="{{link}}" class="btn  btn-primary  btn-ghost" title="Artikel, {{title}}, öffnen">Artikel öffnen</a>
+    </div>
+  </div>
 </div>
