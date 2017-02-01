@@ -31,6 +31,10 @@
     }
   }
 
+  .menu {
+    padding-top: 20px;
+  }
+
   @import "figure";
   @import "grid";
   @import "card";

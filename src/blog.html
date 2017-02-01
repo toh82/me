@@ -8,10 +8,18 @@
   </head>
   <body class="hack  hack--toh">
     <div class="container">
-      <header>
-        <h1>Blog</h1>
-      </header>
+      <div class="grid">
+        <div class="cell -9of12">
+          <header>
+            <h1>Blog</h1>
+          </header>
+        </div>
+        <div class="cell -3of12">
+          {{> navigation}}
+        </div>
+      </div>
     </div>
+
     <div class="main container">
       <div class="grid">
         {{#articleList 'posts'}}

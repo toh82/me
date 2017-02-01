@@ -7,3 +7,7 @@
     padding: 10px;
   }
 }
+
+.container .grid {
+  margin: -1rem;
+}
