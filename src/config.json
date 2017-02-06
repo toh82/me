@@ -1,10 +1,13 @@
 {
   "site": {
     "url": {
-      "base": "http://www.toh82.dev/",
-      "static": "http://static.toh82.dev/"
+      "base": "http://www.toh82.de/",
+      "static": "http://static.toh82.de/"
     },
-    "google_analytics": "UA-61312162-2",
+    "google_analytics": {
+      "active": true,
+      "id": "UA-61312162-2"
+    },
     "header": {
       "title_prefix": "toh82",
       "keywords": "webdesign, webdevelopment, photography, speaker, magento, javascript, php"

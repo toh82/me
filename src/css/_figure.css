@@ -9,7 +9,7 @@
   }
 
   &--break-left {
-    @media (--break-medium) {
+    @media (--break-big) {
       float: left;
       width: 60%;
       margin-right: 2rem;

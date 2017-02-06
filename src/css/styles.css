@@ -2,8 +2,9 @@
 @import "hack/dist/hack.css";
 
 :root {
+  --brand-base: #f5f5f5;
   --brand-primary: #00b38d;
-  --brand-secondary: #404c4d;
+  --brand-secondary: #313b3c;
 }
 
 @custom-media --break-small (min-width: 480px);
@@ -31,10 +32,13 @@
     }
   }
 
-  .menu {
-    padding-top: 20px;
+  .subline {
+    display: block;
+    font-size: 1rem;
   }
 
+  @import "button";
+  @import "menu";
   @import "figure";
   @import "grid";
   @import "card";

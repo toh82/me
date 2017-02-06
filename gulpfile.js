@@ -36,3 +36,6 @@ gulp.task('css', function () {
 });
 
 gulp.task('default', ['hbs','css']);
+gulp.task('watch', function () {
+  return gulp.watch('./src/*', ['hbs','css']);  
+});
