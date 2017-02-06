@@ -37,6 +37,7 @@
     font-size: 1rem;
   }
 
+  @import "tags";
   @import "button";
   @import "menu";
   @import "figure";
