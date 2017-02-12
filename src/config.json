@@ -1,11 +1,11 @@
 {
   "site": {
     "url": {
-      "base": "http://www.toh82.de/",
-      "static": "http://static.toh82.de/"
+      "base": "http://www.toh82.dev/",
+      "static": "http://static.toh82.dev/"
     },
     "google_analytics": {
-      "active": true,
+      "active": false,
       "id": "UA-61312162-2"
     },
     "header": {
