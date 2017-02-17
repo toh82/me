@@ -21,7 +21,6 @@ function articleList (folder, options) {
       lang: $('html').attr('lang'),
       date: $('time').text()
     })
-
   })
 
   return articles

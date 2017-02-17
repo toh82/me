@@ -16,13 +16,13 @@
       </header>
     </div>
 
-    <div class="main container">
+    <main class="main container">
       <div class="grid">
         {{#articleList 'posts'}}
           <div class="cell  -4of12">{{> articleCard}}</div>
         {{/articleList}}
       </div>
-    </div>
+    </main>
 
     <div class="container">
       {{#tagNavigation 'posts'}}

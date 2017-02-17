@@ -1,8 +1,8 @@
 var gulp = require('gulp')
 
 gulp.task('hbs', function () {
-  var docData = require('./script/docData')
   var handlebars = require('gulp-compile-handlebars')
+  var loadDocumentData = require('./script/document/loadData')
   var pageConfig = require('./src/config.json')
 
   var options = {
@@ -16,7 +16,7 @@ gulp.task('hbs', function () {
   }
 
   return gulp.src('./src/**/*.html')
-    .pipe(docData())
+    .pipe(loadDocumentData())
     .pipe(handlebars(pageConfig, options))
     .pipe(gulp.dest('web'))
 })
