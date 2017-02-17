@@ -3,6 +3,7 @@ module.exports = articleList
 var glob = require('glob')
 var fs = require('fs')
 var cheerio = require('cheerio')
+var getDocumentData = require('../document/getData')
 
 function articleList (folder, options) {
   var baseFolder = './src/'
@@ -19,7 +20,8 @@ function articleList (folder, options) {
       intro: $('.main > p.intro').text(),
       link: file.replace(baseFolder, ''),
       lang: $('html').attr('lang'),
-      date: $('time').text()
+      date: $('time').text(),
+      tags: getDocumentData(content, 'tags')
     })
   })
 

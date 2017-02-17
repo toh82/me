@@ -21,6 +21,16 @@ gulp.task('hbs', function () {
     .pipe(gulp.dest('web'))
 })
 
+gulp.task('js', function () {
+    var uglify = require('gulp-uglify')
+    var concat = require('gulp-concat')
+
+    return gulp.src('src/js/*.js')
+      .pipe(uglify())
+      .pipe(concat('script.js'))
+      .pipe(gulp.dest('web/assets/js'))
+})
+
 gulp.task('css', function () {
     var postcss = require('gulp-postcss')
     var sourcemaps = require('gulp-sourcemaps')
@@ -39,7 +49,7 @@ gulp.task('css', function () {
         .pipe(gulp.dest('web/assets/css'))
 });
 
-gulp.task('default', ['hbs','css'])
+gulp.task('default', ['hbs','css','js'])
 gulp.task('watch', function () {
-  return gulp.watch('./src/*', ['hbs','css'])
+  return gulp.watch('./src/*', ['hbs','css','js'])
 })

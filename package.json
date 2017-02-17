@@ -8,13 +8,16 @@
     "cheerio": "^0.22.0",
     "gulp": "^3.9.1",
     "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
     "gulp-postcss": "^6.2.0",
     "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.1",
     "hack": "^0.7.7",
     "handlebars": "^4.0.6",
     "normalize-css": "^2.3.1",
     "postcss-import": "^9.1.0",
     "precss": "^1.4.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "zepto": "^1.2.0"
   }
 }

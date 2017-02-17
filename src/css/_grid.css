@@ -6,8 +6,12 @@
   .cell {
     padding: 10px;
   }
+
+  .cell + .cell {
+    margin-top: 0;
+  }
 }
 
 .container .grid {
-  margin: -1rem;
+  margin: 0 -1rem;
 }
