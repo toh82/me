@@ -12,5 +12,10 @@
       "title_prefix": "toh82",
       "keywords": "webdesign, webdevelopment, photography, speaker, magento, javascript, php"
     }
+  },
+  "blog": {
+    "post": {
+      "folder": "posts"
+    }
   }
 }

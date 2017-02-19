@@ -13,26 +13,29 @@
     <div class="container">
       <header>
         <h1>Blog</h1>
+        <p>Yeah, I have a blog. So far, so good. It's not a white piece of paper anymore.</p>
       </header>
+      <p>I think I will post a lot of private stuff here, so if you want to know me better, welcome. Most of it will be about <strong>hobbies</strong>, <strong>psychology</strong>, <strong>places</strong>, <strong>things I like</strong> and whatever keeps my head busy. But be aware, it might happen that I put some <strong>technical, coding and design related stuff</strong> in it, as well.</p>
+      <p>The coolest thing at all, I'll use this website/blog as personal coding playground. Therefore I would appreciate if you report things you don't like or bugs you find.</p>
     </div>
-
-    <main class="main container">
-      <div class="grid">
-        {{#articleList 'posts'}}
-          <div class="cell  -4of12">{{> articleCard}}</div>
-        {{/articleList}}
-      </div>
-    </main>
 
     <div class="container">
       <hr>
       <h3>Filter blog posts by tags:</h3>
       <ul class="tags">
-        {{#tagNavigation 'posts'}}
-            <li class="tags__item"><a href="/blog.html#{{title}}">{{title}}</a></li>
+        {{#tagNavigation blog.post.folder}}
+        <li class="tags__item"><a href="/blog.html#{{title}}">{{title}}</a></li>
         {{/tagNavigation}}
       </ul>
     </div>
+
+    <main class="main container">
+      <div class="grid">
+        {{#articleList blog.post.folder}}
+          <div class="cell  -4of12">{{> articleCard}}</div>
+        {{/articleList}}
+      </div>
+    </main>
 
     {{> footer}}
   </body>
