@@ -1,4 +1,4 @@
-Zepto(function($){
+Zepto(function ($) {
   'use strict'
 
   var hashFilterItems = $('.js-hash-filter')
@@ -12,12 +12,12 @@ Zepto(function($){
    * @public
    * @returns {void}
    */
-  function highlightHashItems() {
-    var hash = location.hash.replace('#','')
+  function highlightHashItems () {
+    var hash = location.hash.replace('#', '')
 
     if (hash === '') {
       hashFilterItems.removeClass('hash-filter--no')
-      return;
+      return
     }
 
     hashFilterItems.addClass('hash-filter--no')

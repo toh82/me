@@ -22,34 +22,34 @@ gulp.task('hbs', function () {
 })
 
 gulp.task('js', function () {
-    var uglify = require('gulp-uglify')
-    var concat = require('gulp-concat')
+  var uglify = require('gulp-uglify')
+  var concat = require('gulp-concat')
 
-    return gulp.src('src/js/*.js')
-      .pipe(uglify())
-      .pipe(concat('script.js'))
-      .pipe(gulp.dest('web/assets/js'))
+  return gulp.src('src/js/*.js')
+    .pipe(uglify())
+    .pipe(concat('script.js'))
+    .pipe(gulp.dest('web/assets/js'))
 })
 
 gulp.task('css', function () {
-    var postcss = require('gulp-postcss')
-    var sourcemaps = require('gulp-sourcemaps')
-    var atImport = require('postcss-import')
+  var postcss = require('gulp-postcss')
+  var sourcemaps = require('gulp-sourcemaps')
+  var atImport = require('postcss-import')
 
-    return gulp.src('./src/css/styles.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss([
-          atImport({
-            path: ['./node_modules','./src/css'],
-          }),
-          require('precss'),
-          require('autoprefixer')
-        ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('web/assets/css'))
-});
+  return gulp.src('./src/css/styles.css')
+    .pipe(sourcemaps.init())
+    .pipe(postcss([
+      atImport({
+        path: ['./node_modules', './src/css']
+      }),
+      require('precss'),
+      require('autoprefixer')
+    ]))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('web/assets/css'))
+})
 
-gulp.task('default', ['hbs','css','js'])
+gulp.task('default', ['hbs', 'css', 'js'])
 gulp.task('watch', function () {
-  return gulp.watch('./src/*', ['hbs','css','js'])
+  return gulp.watch('./src/*', ['hbs', 'css', 'js'])
 })

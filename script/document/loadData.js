@@ -6,11 +6,10 @@ var getDocumentData = require('./getData')
 
 function docData () {
   return through.obj(function (file, enc, cb) {
-
     var fileContent = file.contents.toString()
     var docData = getDocumentData(fileContent)
 
-    if(!file.data){
+    if (!file.data) {
       file['data'] = {}
     }
     extend(file.data, docData)
