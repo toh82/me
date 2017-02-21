@@ -3,6 +3,7 @@ var gulp = require('gulp')
 gulp.task('hbs', function () {
   var handlebars = require('gulp-compile-handlebars')
   var loadDocumentData = require('./script/document/loadData')
+  var removeDocumentData = require('./script/document/removeData')
   var pageConfig = require('./src/config.json')
 
   var options = {
@@ -18,6 +19,7 @@ gulp.task('hbs', function () {
   return gulp.src('./src/**/*.html')
     .pipe(loadDocumentData())
     .pipe(handlebars(pageConfig, options))
+    .pipe(removeDocumentData())
     .pipe(gulp.dest('web'))
 })
 
