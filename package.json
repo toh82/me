@@ -20,6 +20,7 @@
     "normalize-css": "^2.3.1",
     "postcss-import": "^9.1.0",
     "precss": "^1.4.0",
+    "remarkable": "^1.7.1",
     "standard": "^8.6.0",
     "underscore": "^1.8.3",
     "zepto": "^1.2.0"

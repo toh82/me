@@ -12,7 +12,8 @@ gulp.task('hbs', function () {
     helpers: {
       formatTags: require('./script/helper/formatTags'),
       articleList: require('./script/helper/articleList'),
-      tagNavigation: require('./script/helper/tagNavigation')
+      tagNavigation: require('./script/helper/tagNavigation'),
+      markdown: require('./script/helper/markdown')
     }
   }
 

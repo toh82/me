@@ -1,5 +1,11 @@
 module.exports = getData
 
+/**
+ *
+ * @param {string} content
+ * @param {string} which
+ * @returns {object}
+ */
 function getData (content, which) {
   var which = which || null
   var matches = content.match(/\|-.*.-\|/g)
