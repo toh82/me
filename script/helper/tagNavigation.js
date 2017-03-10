@@ -5,6 +5,11 @@ var fs = require('fs')
 var getDocumentData = require('../document/getData')
 var _ = require('underscore')
 
+/**
+ * @private
+ * @param {Array} files
+ * @returns {Array}
+ */
 function getTagList (files) {
   var tagList = []
 
@@ -18,6 +23,12 @@ function getTagList (files) {
   return tagList
 }
 
+/**
+ * @private
+ * @param {Array} tagList
+ * @param {object} options
+ * @returns {string}
+ */
 function renderTagList (tagList, options) {
   var tagnavigationhtml = ''
   tagList.forEach(function (value) {
@@ -27,6 +38,12 @@ function renderTagList (tagList, options) {
   return tagnavigationhtml
 }
 
+/**
+ * @public
+ * @param {string} folder
+ * @param {object} options
+ * @returns {string}
+ */
 function tagNavigation (folder, options) {
   var baseFolder = './src/'
   var files = glob.sync(baseFolder + folder + '/*.html')

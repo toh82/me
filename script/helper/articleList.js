@@ -12,7 +12,7 @@ var _ = require('underscore')
  * @param {object} options
  * @returns {string}
  */
-function renderArticleList(articles, options) {
+function renderArticleList (articles, options) {
   if(articles.length === 0) {
     return ''
   }
@@ -32,7 +32,7 @@ function renderArticleList(articles, options) {
  * @param {string} folder
  * @returns {Array}
  */
-function getArticlesFromFolder(folder) {
+function getArticlesFromFolder (folder) {
   var baseFolder = './src/'
   var files = glob.sync(baseFolder + folder + '/*.html')
   var articles = []
@@ -62,7 +62,7 @@ function getArticlesFromFolder(folder) {
  * @param {object} options
  * @returns {string}
  */
-function articleList(folder, options) {
+function articleList (folder, options) {
   var articles = getArticlesFromFolder(folder)
 
   return renderArticleList(articles, options)

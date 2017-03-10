@@ -7,7 +7,8 @@ module.exports = getData
  * @returns {object}
  */
 function getData (content, which) {
-  var which = which || null
+  which = which || null
+
   var matches = content.match(/\|-.*.-\|/g)
   var docData = {}
 

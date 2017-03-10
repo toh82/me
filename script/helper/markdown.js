@@ -1,9 +1,9 @@
 module.exports = markdown
 
-var remarkable = require('remarkable');
+var remarkable = require('remarkable')
 
 function markdown (options) {
-  options = options || {};
+  options = options || {}
 
   var context = options.fn(this)
   var md = new remarkable()
