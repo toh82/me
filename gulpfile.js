@@ -38,6 +38,7 @@ gulp.task('css', function () {
   var postcss = require('gulp-postcss')
   var sourcemaps = require('gulp-sourcemaps')
   var atImport = require('postcss-import')
+  var cssnano = require('cssnano')
 
   return gulp.src('./src/css/styles.css')
     .pipe(sourcemaps.init())
@@ -46,7 +47,8 @@ gulp.task('css', function () {
         path: ['./node_modules', './src/css']
       }),
       require('precss'),
-      require('autoprefixer')
+      require('autoprefixer'),
+      cssnano()
     ]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('web/assets/css'))
