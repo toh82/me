@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head itemscope itemtype="http://schema.org/WebSite">
+    {{> htmlheader}}
+    <meta name="author" content="{{author}}">
+    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}}</title>
+
+    {{> analytics}}
+  </head>
+  <body class="hack  hack--toh">
+    {{> navigation}}
+    <div class="container">
+      <header>
+        <h1>{{headline}} {{#if subline}}<span class="subline">{{subline}}</span>{{/if}}</h1>
+        <p class="author">von {{author}}</p>
+        <time datetime="{{date}}">{{date}}</time>
+        <p>{{> shareOnTwitter url="posts/bohnenkaffee-und-was-daraus-wurde.html" text=headline}}</p>
+      </header>
+    </div>
+    <main class="main container">
+      {{#markdown}}{{> @partial-block }}{{/markdown}}
+    </main>
+    <div class="container">
+      {{> flattr}}
+      {{> tags tags=tags}}
+    </div>
+    {{> footer}}
+  </body>
+</html>

@@ -13,7 +13,7 @@ var _ = require('underscore')
  * @returns {string}
  */
 function renderArticleList (articles, options) {
-  if(articles.length === 0) {
+  if (articles.length === 0) {
     return ''
   }
 

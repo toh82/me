@@ -2,7 +2,7 @@ module.exports = loadData
 
 var through = require('through2')
 var extend = require('util')._extend
-var getDocumentData = require('./getData')
+var getData = require('./getData')
 
 function loadData () {
   return through.obj(function (file, enc, cb) {
@@ -14,7 +14,7 @@ function loadData () {
 
     extend(
       file.data,
-      getDocumentData(fileContent)
+      getData(fileContent, null)
     )
 
     cb(null, file)
