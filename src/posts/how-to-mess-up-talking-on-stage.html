@@ -1,13 +1,16 @@
 ---
+headline: How to mess up giving a talk
+subline: Was passiert eigentlich, wenn’s schief läuft
 tags: talks,speaking,fun,howto,conference
-headline: How to mess up giving a talk - Was passiert eigentlich, wenn’s schief läuft
+author: Tobias Hartmann
+date: 2016-12-13
 ---
 
 <!DOCTYPE html>
 <html lang="de">
   <head itemscope itemtype="http://schema.org/WebSite">
     {{> htmlheader}}
-    <meta name="author" content="Tobias Hartmann">
+    <meta name="author" content="{{author}}">
     <title itemprop='name'>{{site.header.title_prefix}} - {{headline}}</title>
 
     {{> analytics}}
@@ -18,9 +21,9 @@ headline: How to mess up giving a talk - Was passiert eigentlich, wenn’s schie
 
     <div class="container">
       <header>
-        <h1>How to mess up giving a talk <span class="subline">Was passiert eigentlich, wenn’s schief läuft.</span></h1>
-        <p class="author">von Tobias Hartmann</p>
-        <time datetime="2016-12-13">13 Dezember 2016</time>
+        <h1>{{headline}} <span class="subline">{{subline}}</span></h1>
+        <p class="author">von {{author}}</p>
+        <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
         <p>Originally posted on: <a target="_blank" href="https://www.webguys.de/diverses/how-to-mess-up-talking-on-stage">www.webguys.de</a></p>
         <p>{{> shareOnTwitter url="posts/how-to-mess-up-talking-on-stage.html" text=headline}}</p>
       </header>
@@ -122,10 +125,11 @@ Nun wie versprochen einige **Quellen** die zeigen, wie ein Talk von der Ideenfin
 - [‘Thought Leader’ gives talk that will inspire your thoughts](https://www.youtube.com/watch?v=_ZBKX-6Gz6A)
 - [THOUGHTS ON PUBLIC SPEAKING BY ZACH HOLMAN](http://speaking.io/)
 {{/markdown}}
-
+    </main>
+    <div class="container">
       {{> flattr}}
       {{> tags tags=tags}}
-    </main>
+    </div>
     {{> footer}}
   </body>
 </html>

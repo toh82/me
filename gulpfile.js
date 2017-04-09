@@ -2,25 +2,19 @@ var gulp = require('gulp')
 
 gulp.task('hbs', function () {
   var handlebars = require('gulp-compile-handlebars')
-  var loadDocumentData = require('./script/document/loadData')
-  var removeDocumentData = require('./script/document/removeData')
+  var hbsBlog = require('hbs-blog')
   var pageConfig = require('./src/config.json')
 
   var options = {
     ignorePartials: true,
     batch: ['./src/partials'],
-    helpers: {
-      formatTags: require('./script/helper/formatTags'),
-      articleList: require('./script/helper/articleList'),
-      tagNavigation: require('./script/helper/tagNavigation'),
-      markdown: require('./script/helper/markdown')
-    }
+    helpers: hbsBlog.helper
   }
 
   return gulp.src('./src/**/*.html')
-    .pipe(loadDocumentData())
+    .pipe(hbsBlog.document.gulp.load())
     .pipe(handlebars(pageConfig, options))
-    .pipe(removeDocumentData())
+    .pipe(hbsBlog.document.gulp.remove())
     .pipe(gulp.dest('web'))
 })
 

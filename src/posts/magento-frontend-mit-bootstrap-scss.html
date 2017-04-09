@@ -1,13 +1,15 @@
 ---
 tags: howto,magento,bootstrap,scss,frontend
 headline: Magento Frontend mit Bootstrap SCSS
+author: Tobias Hartmann
+date: 2014-12-18
 ---
 
 <!DOCTYPE html>
 <html lang="de">
 <head itemscope itemtype="http://schema.org/WebSite">
     {{> htmlheader}}
-    <meta name="author" content="Tobias Hartmann">
+    <meta name="author" content="{{author}}">
     <title itemprop='name'>{{site.header.title_prefix}} - {{headline}}</title>
 
     {{> analytics}}
@@ -18,9 +20,9 @@ headline: Magento Frontend mit Bootstrap SCSS
 
 <div class="container">
     <header>
-        <h1>Magento Frontend mit Bootstrap SCSS</h1>
-        <p class="author">von Tobias Hartmann</p>
-        <time datetime="2014-12-18">18 Dezember 2014</time>
+        <h1>{{headline}}</h1>
+        <p class="author">von {{author}}</p>
+        <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
         <p>Originally posted on: <a target="_blank" href="https://www.webguys.de/magento-1/tuerchen-18-magento-frontend-mit-bootstrap-scss">www.webguys.de</a></p>
         <p>{{> shareOnTwitter url="posts/magento-frontend-mit-bootstrap-scss.html" text=headline}}</p>
     </header>
@@ -499,10 +501,11 @@ Hier ein Beispiel anhand der `3columns.phtml`. Nicht zu vergessen, dass wir eine
 <?php echo $this->getAbsoluteFooter() ?>
 ```
 {{/markdown}}
-
+</main>
+<div class="container">
     {{> flattr}}
     {{> tags tags=tags}}
-</main>
+</div>
 {{> footer}}
 </body>
 </html>

@@ -15,7 +15,8 @@
   },
   "blog": {
     "post": {
-      "folder": "posts"
+      "baseFolder": "./src/",
+      "folder": "posts/"
     }
   },
   "author": {

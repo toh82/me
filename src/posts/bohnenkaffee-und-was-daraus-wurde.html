@@ -1,13 +1,17 @@
 ---
-tags: Kaffee,Upcycling,DIY,Repair,mehappy,Braun
+headline: Bohnenkaffee und was daraus wurde
+subline: oder auch Früher war alles viel besser.
+tags: kaffee,upcycling,diy,repair,mehappy,braun
+author: Tobias Hartmann
+date: 2017-01-01
 ---
 
 <!DOCTYPE html>
 <html lang="de">
   <head itemscope itemtype="http://schema.org/WebSite">
     {{> htmlheader}}
-    <meta name="author" content="Tobias Hartmann">
-    <title itemprop='name'>{{site.header.title_prefix}} - Bohnenkaffee und was daraus wurde oder auch: Früher war alles viel besser</title>
+    <meta name="author" content="{{author}}">
+    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}} {{subline}}</title>
 
     {{> analytics}}
   </head>
@@ -17,9 +21,9 @@ tags: Kaffee,Upcycling,DIY,Repair,mehappy,Braun
 
     <div class="container">
       <header>
-        <h1>Bohnenkaffee und was daraus wurde <span class="subline">oder auch: Früher war alles viel besser.</span></h1>
-        <p class="author">von Tobias Hartmann</p>
-        <time datetime="2017-01-01">01 Januar 2017</time>
+        <h1>{{headline}} <span class="subline">{{subline}}</span></h1>
+        <p class="author">von {{author}}</p>
+        <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
         <p>{{> shareOnTwitter url="posts/bohnenkaffee-und-was-daraus-wurde.html"
                            text="Bohnenkaffee und was daraus wurde oder auch: Früher war alles viel besser" }}</p>
       </header>
@@ -46,9 +50,11 @@ tags: Kaffee,Upcycling,DIY,Repair,mehappy,Braun
       <p><strong>Die Mühle surrte los</strong> als wäre nichts gewesen, super, Kaffee-Bohnen rein, Zeituhr auf voll und ab dafür. Leise ist zugegeben anders, aber ich hatte genau die Körnung, die ich wollte, perfekt.</p>
       <p>Eine absolute #Lovestory ❤</p>
 
+    </main>
+    <div class="container">
       {{> flattr}}
       {{> tags tags=tags}}
-    </main>
+    </div>
     {{> footer}}
   </body>
 </html>

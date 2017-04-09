@@ -1,25 +1,27 @@
 ---
+headline: Die Meditation und ich
+subline: Entspannung rettet den Tag, eine erste Erkenntnis
 tags: private,meditation,psychology,depression,stress
+author: Tobias Hartmann
+date: 2017-02-04
 ---
 
 <!DOCTYPE html>
 <html lang="de">
   <head itemscope itemtype="http://schema.org/WebSite">
     {{> htmlheader}}
-    <meta name="author" content="Tobias Hartmann">
+    <meta name="author" content="{{author}}">
     <title itemprop='name'>{{site.header.title_prefix}} - Die Meditation und ich - Entspannung rettet den Tag, eine erste Erkenntnis</title>
 
     {{> analytics}}
   </head>
   <body class="hack  hack--toh">
-
     {{> navigation}}
-
     <div class="container">
       <header>
-        <h1>Die Meditation und ich <span class="subline">Entspannung rettet den Tag, eine erste Erkenntnis</span></h1>
-        <p class="author">von Tobias Hartmann</p>
-        <time datetime="2017-02-04">04 Februar 2017</time>
+        <h1>{{headline}} <span class="subline">{{subline}}</span></h1>
+        <p class="author">von {{author}}</p>
+        <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
         <p>{{> shareOnTwitter url="posts/die-meditation-und-ich.html"
                            text="Die Meditation und ich - Entspannung rettet den Tag, eine erste Erkenntnis" }}</p>
       </header>
@@ -47,10 +49,11 @@ tags: private,meditation,psychology,depression,stress
       <p><strong>Es hat geholfen, es hat mich beruhigt</strong>, mein Kopf und ich hörten auf zu “Rennen”.</p>
       <p>Obwohl ich weiß, dass ich gestern noch viel zu tun hatte und noch etwas aufgekratzt war, empfinde ich eine gewisse Ruhe. Meine Termine realisierte ich wieder als schön und freute mich auf sie.</p>
       <p><strong>Wie geil ist das denn bitte!</strong> Ich konnte mich beruhigen und hatte damit die Chance auf einen tollen Tag.</p>
-
+    </main>
+    <div class="container">
       {{> flattr}}
       {{> tags tags=tags}}
-    </main>
+    </div>
     {{> footer}}
   </body>
 </html>

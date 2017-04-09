@@ -3,7 +3,7 @@
   <head itemscope itemtype="http://schema.org/WebSite">
     {{> htmlheader}}
     <meta name="author" content="{{author}}">
-    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}}</title>
+    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}} {{subline}}</title>
 
     {{> analytics}}
   </head>
@@ -13,7 +13,7 @@
       <header>
         <h1>{{headline}} {{#if subline}}<span class="subline">{{subline}}</span>{{/if}}</h1>
         <p class="author">von {{author}}</p>
-        <time datetime="{{date}}">{{date}}</time>
+        <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
         <p>{{> shareOnTwitter url="posts/bohnenkaffee-und-was-daraus-wurde.html" text=headline}}</p>
       </header>
     </div>

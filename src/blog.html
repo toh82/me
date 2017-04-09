@@ -31,7 +31,7 @@
 
     <main class="main container">
       <div class="grid">
-        {{#articleList blog.post.folder}}
+        {{#articleList blog.post.baseFolder blog.post.folder}}
           <div class="cell  -4of12">{{> articleCard}}</div>
         {{/articleList}}
       </div>
