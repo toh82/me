@@ -7,32 +7,8 @@ date: 2016-12-13
 lang: de
 ---
 
-<!DOCTYPE html>
-<html lang="{{lang}}">
-  <head itemscope itemtype="http://schema.org/WebSite">
-    {{> htmlheader}}
-    <meta name="author" content="{{author}}">
-    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}}</title>
+{{#> blogArticle}}<p id="intro-text" class="intro">Ihr sucht einen Artikel, in dem erzählt wird, wie ihr am besten einen Talk gebt, dann habe ich hier leider nichts für euch. In diesem Artikel geht es wirklich nur darum, wie ihr das ganze so richtig gut vermasseln könnt.</p>
 
-    {{> analytics}}
-  </head>
-  <body class="hack  hack--toh">
-
-    {{> navigation}}
-
-    <div class="container">
-      <header>
-        <h1>{{headline}} <span class="subline">{{subline}}</span></h1>
-        <p class="author">von {{author}}</p>
-        <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
-        <p>Originally posted on: <a target="_blank" href="https://www.webguys.de/diverses/how-to-mess-up-talking-on-stage">www.webguys.de</a></p>
-        <p>{{> shareOnTwitter url="posts/how-to-mess-up-talking-on-stage.html" text=headline}}</p>
-      </header>
-    </div>
-    <main class="main container">
-      <p id="intro-text" class="intro">Ihr sucht einen Artikel, in dem erzählt wird, wie ihr am besten einen Talk gebt, dann habe ich hier leider nichts für euch. In diesem Artikel geht es wirklich nur darum, wie ihr das ganze so richtig gut vermasseln könnt.</p>
-
-{{#markdown}}
 Es gibt eine enorme Menge an sehr guten Artikeln und Videos darüber, wie es am Besten gelingt, einen Talk auf einer Konferenz oder einer Usergroup zu geben. Ich möchte mich nicht in diese Reihe eingliedern, sondern vielmehr aufzeigen was passiert, wenn es schief läuft.
 
 **Aber warum?**
@@ -123,14 +99,6 @@ Die **Slides für den Talk** könnt ihr übrigens hier finden: [Slides.com: How 
 Nun wie versprochen einige **Quellen** die zeigen, wie ein Talk von der Ideenfindung bis hin zur Feedbackrunde, aufgebaut werden kann.
 - [How To Give the Killer Tech Talk — A Pamphlet](http://writing.jan.io/2013/05/10/how-to-give-the-killer-tech-talk-a-pamphlet.html)
 - [How to prepare and write a tech conference talk](http://wunder.schoenaberselten.com/2016/02/16/how-to-prepare-and-write-a-tech-conference-talk/)
-- [‘Thought Leader’ gives talk that will inspire your thoughts](https://www.youtube.com/watch?v=_ZBKX-6Gz6A)
+- ['Thought Leader' gives talk that will inspire your thoughts](https://www.youtube.com/watch?v=_ZBKX-6Gz6A)
 - [THOUGHTS ON PUBLIC SPEAKING BY ZACH HOLMAN](http://speaking.io/)
-{{/markdown}}
-    </main>
-    <div class="container">
-      {{> flattr}}
-      {{> tags tags=tags}}
-    </div>
-    {{> footer}}
-  </body>
-</html>
+{{/blogArticle}}

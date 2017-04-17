@@ -7,7 +7,7 @@
     "test": "standard"
   },
   "devDependencies": {
-    "hbs-blog": "^1.0.2",
+    "hbs-blog": "^1.1.0",
     "autoprefixer": "^6.6.1",
     "cheerio": "^0.22.0",
     "cssnano": "^3.10.0",

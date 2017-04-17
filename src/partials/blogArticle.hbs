@@ -3,7 +3,7 @@
   <head itemscope itemtype="http://schema.org/WebSite">
     {{> htmlheader}}
     <meta name="author" content="{{author}}">
-    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}} {{subline}}</title>
+    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}} {{#if subline}}{{subline}}{{/if}}</title>
 
     {{> analytics}}
   </head>

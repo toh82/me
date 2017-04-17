@@ -1,37 +1,13 @@
 ---
 tags: howto,magento,bootstrap,scss,frontend
-headline: Magento Frontend mit Bootstrap SCSS
+headline: Magento 1 Frontend
+subline: mit Bootstrap und SCSS
 author: Tobias Hartmann
 date: 2014-12-18
 lang: de
 ---
+{{#> blogArticle}}<p id="intro-text" class="intro">In diesem Artikel schauen wir gemeinsam, wie ein <strong>Magento Theme</strong> auf <strong>Bootstrap</strong> aufgebaut werden kann und warum es gar nicht so kompliziert ist wie vermutet. Helfen werden uns dabei <strong>SCSS</strong>, zum Erstellen der Stylesheets und <strong>Gulp</strong> zum Kompilieren der SCSS und Bootstrap Dateien. Ziel ist es herauszufinden wie <strong>Bootstrap</strong> mit möglich wenig Klassen-Überschreibungen einfach und effektiv eingesetzt werden kann.</p>
 
-<!DOCTYPE html>
-<html lang="{{lang}}">
-<head itemscope itemtype="http://schema.org/WebSite">
-    {{> htmlheader}}
-    <meta name="author" content="{{author}}">
-    <title itemprop='name'>{{site.header.title_prefix}} - {{headline}}</title>
-
-    {{> analytics}}
-</head>
-<body class="hack  hack--toh">
-
-{{> navigation}}
-
-<div class="container">
-    <header>
-        <h1>{{headline}}</h1>
-        <p class="author">von {{author}}</p>
-        <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
-        <p>Originally posted on: <a target="_blank" href="https://www.webguys.de/magento-1/tuerchen-18-magento-frontend-mit-bootstrap-scss">www.webguys.de</a></p>
-        <p>{{> shareOnTwitter url="posts/magento-frontend-mit-bootstrap-scss.html" text=headline}}</p>
-    </header>
-</div>
-<main class="main container">
-    <p id="intro-text" class="intro">In diesem Artikel schauen wir gemeinsam, wie ein <strong>Magento Theme</strong> auf <strong>Bootstrap</strong> aufgebaut werden kann und warum es gar nicht so kompliziert ist wie vermutet. Helfen werden uns dabei <strong>SCSS</strong>, zum Erstellen der Stylesheets und <strong>Gulp</strong> zum Kompilieren der SCSS und Bootstrap Dateien. Ziel ist es herauszufinden wie <strong>Bootstrap</strong> mit möglich wenig Klassen-Überschreibungen einfach und effektiv eingesetzt werden kann.</p>
-
-{{#markdown}}
 <strong>Weil</strong> mit jedem <strong>Boilerplate Theme</strong>, welches auf einem Framework basiert auch eine große Anzahl an Überschreibungen auf uns zu kommt, erst recht wenn es um so komplexe Systeme wie <a href="http://magento.com/">Magento</a> und um ein Framework wie <a href="http://getbootstrap.com/">Bootstrap</a> geht. Ein wenig besser wird es, wenn wir statt dem normalen <strong>Bootstrap CSS</strong> zu <a href="http://lesscss.org/"><strong>less</strong></a> oder <a href="http://sass-lang.com/"><strong>SASS</strong></a> greifen, aber um eine wirklich saubere Basis zu bekommen, empfiehlt es sich im ersten Schritt auf weitestgehend alles Vorhandene zu verzichten und <strong>nur das Magento HTML als Basis</strong> zu sehen.
 
 Ja es ist viel Arbeit doch es zahlt sich aus, zumindest gedanklich, dieses Experiment zu machen. Durch einige wirklich hilfreiche Funktionen von Bootstrap ist es nämlich einfacher als man denkt.
@@ -501,12 +477,4 @@ Hier ein Beispiel anhand der `3columns.phtml`. Nicht zu vergessen, dass wir eine
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
 ```
-{{/markdown}}
-</main>
-<div class="container">
-    {{> flattr}}
-    {{> tags tags=tags}}
-</div>
-{{> footer}}
-</body>
-</html>
+{{/blogArticle}}
