@@ -22,7 +22,11 @@
     </main>
     <div class="container">
       {{> flattr}}
-      {{> tags tags=tags}}
+      <ul class="tags">
+        {{#formatTags tags}}
+        <li class="tags__item">{{tag}}</li>
+        {{/formatTags}}
+      </ul>
     </div>
     {{> footer}}
   </body>
