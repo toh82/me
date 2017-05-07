@@ -23,7 +23,7 @@
       <hr>
       <h3>Filter blog posts by tags:</h3>
       <ul class="tags">
-        {{#tagNavigation blog.post.folder}}
+        {{#tagNavigation './src/posts'}}
         <li class="tags__item"><a href="/blog.html#{{title}}">{{title}}</a></li>
         {{/tagNavigation}}
       </ul>
