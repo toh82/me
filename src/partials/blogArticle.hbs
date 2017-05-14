@@ -14,7 +14,12 @@
         <h1 itemprop="headline">{{headline}} {{#if subline}}<span class="subline">{{subline}}</span>{{/if}}</h1>
         <p itemprop="author" class="author">von {{author}}</p>
         <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
-        <meta itemprop="datePublished" content="{{formatTime date "YYYY-MM-DD"}}">
+          <meta itemprop="datePublished" content="{{formatTime date "YYYY-MM-DD"}}"><br>
+          {{> shareOnTwitter
+            path=relativePath
+            text=headline
+            author=twitter }}
+
       </header>
       {{#markdown}}{{> @partial-block }}{{/markdown}}
     </main>

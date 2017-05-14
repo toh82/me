@@ -56,6 +56,24 @@
     }
   }
 
+  .footer {
+    margin-bottom: 4em;
+  }
+
+  .list {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+
+    &--inline li {
+      padding: 0 0.5em;
+      display: inline-block;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
   .subline {
     display: block;
     font-size: 1rem;

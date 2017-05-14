@@ -5,10 +5,18 @@ gulp.task('hbs', function () {
   var hbsBlog = require('hbs-blog')
   var pageConfig = require('./src/config.json')
 
+  var localHelper = {
+    getUrl: require('./src/helper/getUrl')
+  }
+
   var options = {
     ignorePartials: true,
     batch: ['./src/partials'],
-    helpers: hbsBlog.helper
+    helpers: Object.assign(
+        {},
+        localHelper,
+        hbsBlog.helper
+    )
   }
 
   return gulp.src('./src/**/*.html')
