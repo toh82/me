@@ -1,6 +1,6 @@
 {{#if site.google_analytics.active}}
 <script>
-  var disableStr = 'ga-disable-' + {{site.google_analytics.id}};
+  var disableStr = 'ga-disable-{{site.google_analytics.id}}';
   if (document.cookie.indexOf(disableStr + '=true') > -1) {
     window[disableStr] = true;
   }

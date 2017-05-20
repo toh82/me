@@ -12,7 +12,10 @@
     <main class="main container" itemscope itemtype="http://schema.org/Article">
       <header>
         <h1 itemprop="headline">{{headline}} {{#if subline}}<span class="subline">{{subline}}</span>{{/if}}</h1>
-        <p itemprop="author" class="author">von {{author}}</p>
+        <div class="author-image">
+          <img class="image  image--round  image--small" src="{{site.url.static}}assets/media/me.jpg" alt="Picture of Tobias Hartmann">
+        </div>
+        <p class="author">von <span itemprop="author" >{{author}}</span></p>
         <time datetime="{{formatTime date "YYYY-MM-DD"}}">{{formatTime date "DD.MM.YYYY"}}</time>
           <meta itemprop="datePublished" content="{{formatTime date "YYYY-MM-DD"}}"><br>
           {{> shareOnTwitter

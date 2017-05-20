@@ -1,8 +1,8 @@
 {
   "site": {
     "url": {
-      "base": "http://www.toh82.de/",
-      "static": "http://static.toh82.de/"
+      "base": "https://www.toh82.de/",
+      "static": "https://static.toh82.de/"
     },
     "google_analytics": {
       "active": true,

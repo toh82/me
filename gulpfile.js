@@ -42,7 +42,12 @@ gulp.task('css', function () {
   var atImport = require('postcss-import')
   var cssnano = require('cssnano')
 
-  return gulp.src('./src/css/styles.css')
+  var cssSrc = [
+    './src/css/styles.css',
+    './src/css/specific.css'
+  ]
+
+  return gulp.src(cssSrc)
     .pipe(sourcemaps.init())
     .pipe(postcss([
       atImport({
