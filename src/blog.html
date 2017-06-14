@@ -13,11 +13,18 @@
     <div class="container">
       <header role="banner">
         <h1>Blog</h1>
-        <p>Yeah, I have a blog. So far, so good. It's not a white piece of paper anymore.</p>
+        <p>Yeah, I have a blog. So far, so good. It's not a white sheet of paper anymore.</p>
       </header>
-      <p>I think I will post a lot of private stuff here, so if you want to know me better, welcome. Most of it will be about <strong>hobbies</strong>, <strong>psychology</strong>, <strong>places</strong>, <strong>things I like</strong> and whatever keeps my head busy. But be aware, it might happen that I put some <strong>technical, coding and design related stuff</strong> in it, as well.</p>
-      <p>The coolest thing at all, I'll use this website/blog as personal coding playground. Therefore I would appreciate if you report things you don't like or bugs you find.</p>
+      <p>I will post a lot of private stuff here, so if you want to know me better, welcome. Most of it will be about my <strong>hobbies</strong>, about <strong>psychology</strong>, <strong>places</strong>, <strong>things I like</strong> and whatever keeps my mind busy. But be aware, it might happen that I put some <strong>technical, coding and design related stuff</strong> in it, as well.</p>
     </div>
+
+    <main class="main container">
+      <div class="grid">
+        {{#articleList blog.post.baseFolder blog.post.folder}}
+          <div class="cell  -4of12">{{> articleCard}}</div>
+        {{/articleList}}
+      </div>
+    </main>
 
     <div class="container">
       <hr>
@@ -28,14 +35,6 @@
         {{/tagNavigation}}
       </ul>
     </div>
-
-    <main class="main container">
-      <div class="grid">
-        {{#articleList blog.post.baseFolder blog.post.folder}}
-          <div class="cell  -4of12">{{> articleCard}}</div>
-        {{/articleList}}
-      </div>
-    </main>
 
     {{> footer}}
   </body>
