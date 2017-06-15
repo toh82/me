@@ -7,7 +7,6 @@
     {{> analytics}}
   </head>
   <body class="hack  hack--toh">
-
     {{> navigation}}
 
     <div class="container">
@@ -16,6 +15,16 @@
         <p>Yeah, I have a blog. So far, so good. It's not a white sheet of paper anymore.</p>
       </header>
       <p>I will post a lot of private stuff here, so if you want to know me better, welcome. Most of it will be about my <strong>hobbies</strong>, about <strong>psychology</strong>, <strong>places</strong>, <strong>things I like</strong> and whatever keeps my mind busy. But be aware, it might happen that I put some <strong>technical, coding and design related stuff</strong> in it, as well.</p>
+    </div>
+
+    <div class="container">
+      <hr>
+      <h3>Filter posts by tags:</h3>
+      <ul class="tags">
+        {{#tagNavigation './src/posts'}}
+        <li class="tags__item"><a href="/blog.html#{{title}}">{{title}}</a></li>
+        {{/tagNavigation}}
+      </ul>
     </div>
 
     <main class="main container">
@@ -28,11 +37,15 @@
 
     <div class="container">
       <hr>
-      <h3>Filter blog posts by tags:</h3>
-      <ul class="tags">
-        {{#tagNavigation './src/posts'}}
-        <li class="tags__item"><a href="/blog.html#{{title}}">{{title}}</a></li>
-        {{/tagNavigation}}
+      <h2>This blog is build with hbs-blog</h2>
+      <p><a target="_blank" href="https://www.npmjs.com/package/hbs-blog">hbs-blog</a> is an open source npm module. It uses handlebarsjs, front-matters and gulp to create a static blog. If you want to contribute, check out the <a target="_blank" href="https://github.com/toh82/hbs-blog">github page of hbs-blog</a>.</p>
+
+      <p>If you enjoy what I'm doing I would appreciate if you ...</p>
+      <ul>
+        <li>support me on <a target="_blank" href="https://www.patreon.com/thartmann">patreon</a></li>
+        <li>support me on <a target="_blank" href="https://flattr.com/profile/toh82">flattr</a></li>
+        <li>buy me a beer or coffee if we meet</li>
+        <li>give feedback</li>
       </ul>
     </div>
 
