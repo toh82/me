@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     {{> htmlheader}}
-    <title>{{site.header.title_prefix}} - Blog</title>
+    <title>code.coffee.photography - Blog von Tobias Hartmann</title>
 
     {{> analytics}}
   </head>
@@ -11,15 +11,14 @@
 
     <div class="container">
       <header role="banner">
-        <h1>Blog</h1>
-        <p>Yeah, I have a blog. So far, so good. It's not a white sheet of paper anymore.</p>
+        <h1>Code Coffee & Photography</h1>
+        <p>Wie es der Name schon vermuten lässt, geht es um Web-Entwicklung, Kaffee und Photography. Immer mal wieder aber auch um Themen, welche sich super beim Kaffee besprechen lassen.</p>
       </header>
-      <p>I will post a lot of private stuff here, so if you want to know me better, welcome. Most of it will be about my <strong>hobbies</strong>, about <strong>psychology</strong>, <strong>places</strong>, <strong>things I like</strong> and whatever keeps my mind busy. But be aware, it might happen that I put some <strong>technical, coding and design related stuff</strong> in it, as well.</p>
     </div>
 
     <div class="container">
       <hr>
-      <h3>Filter posts by tags:</h3>
+      <h3>Stichwort-Filter:</h3>
       <ul class="tags">
         {{#tagNavigation './src/posts'}}
         <li class="tags__item"><a href="/blog.html#{{title}}">{{title}}</a></li>
