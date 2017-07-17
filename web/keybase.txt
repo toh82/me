@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/toh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.toh82.de
+  * I am toh (https://keybase.io/toh) on keybase.
+  * I have a public key with fingerprint FA09 1D03 9D8C 120F B2C1  AA6C 188C 4225 9AFC 8B67
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017e50bf84f3dff51dbacd2fada0bb4afb05ae130e61605968589a8ff5f21bf72b0a",
+            "fingerprint": "fa091d039d8c120fb2c1aa6c188c42259afc8b67",
+            "host": "keybase.io",
+            "key_id": "188c42259afc8b67",
+            "kid": "01017e50bf84f3dff51dbacd2fada0bb4afb05ae130e61605968589a8ff5f21bf72b0a",
+            "uid": "ae4200ed2ca82191ee3feb7c8181cc19",
+            "username": "toh"
+        },
+        "service": {
+            "hostname": "www.toh82.de",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1495011592,
+    "expire_in": 157680000,
+    "prev": "53f322d36a987b0d27fd4acb412b38f8100fa04a9854775893f7d223f848680a",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.70
+Comment: https://keybase.io/crypto
+
+yMInAnicrVJbbExBGN5SSoWoiEtcwknq0jSbmTnn7JmzUiRIaFwelKQNWTNnZrYn
+Zc/aPb2pLSXSSFxSt2hdU7emcVkhaaqkKq7hAakXHlApGyRKI0VEzWl482heJvP/
+3/fNN9/8t0cO9mWmza6+funEaLYt7WFHXamvcHLWsCqFOqxSCVYpJXxg4+sZj7uh
+EpspQQVAAA2uAyqwJlQmhA4ZJRZDgjACKNWIoEAnHKqAB2AA6GYA69gkWCIFglQY
+iAKi5CrCjoR5LBqzI66UFQSYkAHVZNiCCAiKLEhIwIIYWxpCukmEhWnAkMRiJ+4x
+pDlK4txvO7ImD6EBe//A/2ffpQNyhGsIAM6QRTCCJuRcFZwaFoYYWhY0PWCcxyJk
+A5do1ylWErmKLJTZFvcy9R7xp1leXu6XAIz8jEtaNOa4juWsl51i140GPaJbGR1A
+chr6oxGidoTJBCWhjMfithNRglAiLdf2RKFm6gBC3US5Cq+I2jEesj2EbgQwkMu7
+hpdJSV0VKkJMDRATGxQwZAimEYtqEFEVCwwBkF+jya6uGYYMRBUGQ0iVKWIp5QUS
+5xsjjhLUpE0SlpJxOxwhbmmMK4lbN9ek+9IyfUOHDPImy5c5fPTfeTvZkNG/uihr
+357NqUW3pyw7f2VhtOjpl1W8edrFGaIyZ3vf16a5oX1TOifNr83oq/hxtTDvY/Wu
+ni2+1nNkf2djwd72xKxwU97Vz+caknXNB1PTlfRPB5+Ej464kNx05AWuffRk3eIH
+edm7d776Vrvj2csFdVOPTUgufXvjbPbhUQfaT3UVzzvUu9zRmp1fy5acqZtzGV90
+O1tqxtb2dlRVRua+y7Xbsu8U1ozP7/G1dU/87m9+XjLK2Hu8r/va9Df5Y1ItWRWp
+xm7z8euczNRgsXVlfXpy5/jE/fxn4xb1PUy21hy/2/j+bNnHrW1dj+6UtBes6K+f
+arV2zbxHGzfuyjj98kOi8OeQtTn+36YXRac=
+=BJk6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/toh
+
+==================================================================
