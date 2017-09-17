@@ -18,3 +18,5 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteCond %{ENV:HTTPS} !=on
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+Redirect 301 /blog.html https://www.code-coffee-photography.blog
