@@ -18,3 +18,8 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteCond %{ENV:HTTPS} !=on
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+Redirect 301 https://www.toh82.de/posts/gulp-modul-entwicklung-fuer-beginner.html https://www.code-coffee-photography.blog/posts/gulp-modul-entwicklung-fuer-beginner.html
+Redirect 301 https://www.toh82.de/posts/bohnenkaffee-und-was-daraus-wurde.html https://www.code-coffee-photography.blog/posts/bohnenkaffee-und-was-daraus-wurde.html
+Redirect 301 https://www.toh82.de/posts/kaffee-ist-zum-geniessen-nicht-nur-zum-trinken.html https://www.code-coffee-photography.blog/posts/kaffee-ist-zum-geniessen-nicht-nur-zum-trinken.html
+Redirect 301 https://www.toh82.de/posts/magento-frontend-mit-bootstrap-scss.html https://www.code-coffee-photography.blog/posts/magento-frontend-mit-bootstrap-scss.html
