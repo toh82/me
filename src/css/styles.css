@@ -14,7 +14,9 @@
   
   .social {
     grid-area: social;
-    margin-top: 0;    
+    margin-top: 0;
+    align-self: center;    
+    text-align: right;
   }
 
   .info-box {
@@ -35,6 +37,10 @@
     background-color: black;
     color: #fff;
     padding: 1.5rem 2rem;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
 
     @media (--break-medium) { 
       position: absolute;
@@ -61,6 +67,26 @@
     grid-area: footer;
     background: #000;
     color: #fff;
+
+    .link {
+      color: #fff;
+      border: none;
+      font-style: normal;
+      padding: 0;
+    }
+  }
+  
+  .cnt {
+    .cnt__header {
+      padding: 2rem 2rem 1rem 2rem;
+    }
+    .cnt__content {
+      padding: 2rem;
+    }
+
+    .cnt__header + .cnt__content {
+      padding-top: 0;
+    } 
   }
   
   .navigation {
@@ -68,16 +94,33 @@
     margin-top: 0;
     align-self: center;
 
+    .list__item {
+      padding: 0;
+    }
+
     .link {
       border-bottom: none;
       padding: 0.25rem 1rem;
       font-style: normal;
-      color: #000000;
-      text-transform: uppercase;      
-    }
-  
-    .list__item {
-      padding: 0 0.5rem
-    }    
+      color: var(--color__primary);
+      text-transform: uppercase;  
+
+      &:hover {
+        color: var(--color__base);
+      }    
+    } 
   }  
+
+
+  .project-teaser {
+    &__navigation {
+      grid-area: navigation;
+    }
+    &__text {
+      grid-area: text;
+    }
+    &__image-small {
+      grid-area: image-small;
+    }
+  }
 }

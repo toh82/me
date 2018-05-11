@@ -1,5 +1,5 @@
 body {
-  margin-bottom: 4em;
+  margin-bottom: 0;
   color: var(--color__primary);
   background-color: var(--color__base);
   font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -96,12 +96,9 @@ a {
   }
 }
 
+p + p, 
 main * + * {
     margin-top: 1rem;
-
-    @media (--break-small) {
-        margin-top: 1.5rem;
-    }
 }
 
 img {
