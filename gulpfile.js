@@ -13,9 +13,9 @@ gulp.task('hbs', function () {
     ignorePartials: true,
     batch: ['./src/partials'],
     helpers: Object.assign(
-        {},
-        localHelper,
-        hbsBlog.helper
+      {},
+      localHelper,
+      hbsBlog.helper
     )
   }
 
@@ -24,6 +24,17 @@ gulp.task('hbs', function () {
     .pipe(handlebars(pageConfig, options))
     .pipe(hbsBlog.document.gulp.remove())
     .pipe(gulp.dest('web'))
+})
+
+gulp.task('images', function () {
+  var imagemin = require('gulp-imagemin')
+  var imageminMozjpeg = require('imagemin-mozjpeg')
+
+  gulp.src('src/media/**/*')
+    .pipe(imagemin([
+      imageminMozjpeg({quality: 90})
+    ]))
+    .pipe(gulp.dest('web/assets/media'))
 })
 
 gulp.task('js', function () {
@@ -62,6 +73,7 @@ gulp.task('css', function () {
 })
 
 gulp.task('default', ['hbs', 'css', 'js'])
+gulp.task('build', ['hbs', 'css', 'js', 'images'])
 gulp.task('watch', function () {
-  return gulp.watch('./src/*', ['hbs', 'css', 'js'])
+  return gulp.watch('./src/**/*', ['hbs', 'css', 'js'])
 })

@@ -1,12 +1,8 @@
 {
   "site": {
     "url": {
-      "base": "https://www.toh82.de/",
-      "static": "https://static.toh82.de/"
-    },
-    "google_analytics": {
-      "active": true,
-      "id": "UA-61312162-2"
+      "base": "",
+      "static": ""
     },
     "header": {
       "title_prefix": "toh82",

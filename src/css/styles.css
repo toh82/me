@@ -1,111 +1,83 @@
 @import "normalize-css/normalize.css";
-@import "hack/dist/hack.css";
 @import "_variables.css";
+@import "_base.css";
+@import "_list.css";
 
-.hack--toh {
-  color: var(--brand-secondary);
-  letter-spacing: -0.01em;
+.toh {
+  @import "layout";
+  @import "link";
+  @import "text";
 
-  h1 {
-    font-size: 1.5rem;
-
-    &.align-center {
-      display: block;
-    }
+  .display {
+    grid-area: header;
+  }
+  
+  .social {
+    grid-area: social;
+    margin-top: 0;    
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin-bottom: 0;
-  }
+  .info-box {
+    grid-area: headercontent;
+    position: relative;
+    margin-top: 0; 
 
-  p {
-    line-height: 1.5;
-  }
-
-  main:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  main * + * {
-    margin-top: 1.5rem;
-  }
-
-  a {
-    cursor: pointer;
-    color: var(--brand-primary);
-    text-decoration: none;
-    border-bottom: 1px solid var(--brand-primary);
-
-    &:hover {
-      background-color: var(--brand-primary);
+    .link {
       color: #fff;
     }
+
+    .link:hover {
+      background-color: transparent;
+    }
   }
 
-  ul {
-    li + li {
-      margin-top: 0.5rem;
+  .info-box__content {
+    background-color: black;
+    color: #fff;
+    padding: 1.5rem 2rem;
+
+    @media (--break-medium) { 
+      position: absolute;
+      top: -10rem;
+      left: 0;
+      padding: 2rem 3rem;
     }
+  }
+  
+  .teaserslot {
+    grid-area: teaserslot;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+
+  .logo {
+    grid-area: gapn;
+    align-self: center;
   }
 
   .footer {
-    margin-bottom: 4em;
+    grid-area: footer;
+    background: #000;
+    color: #fff;
   }
+  
+  .navigation {
+    grid-area: navigation;
+    margin-top: 0;
+    align-self: center;
 
-  .list {
-    margin-left: -0.5em;
-    margin-right: -0.5em;
-
-    &--inline li {
-      padding: 0 0.5em;
-      display: inline-block;
-
-      &:after {
-        display: none;
-      }
+    .link {
+      border-bottom: none;
+      padding: 0.25rem 1rem;
+      font-style: normal;
+      color: #000000;
+      text-transform: uppercase;      
     }
-  }
-
-  .subline {
-    display: block;
-    font-size: 1rem;
-  }
-
-  @import "grid";
-  @import "menu";
-
-  .image {
-    width: 200px;
-    height: 200px;
-    background-size: cover;
-    background-position: center center;
-
-    &--small {
-      width: 60px;
-      height: 60px;
-      float: left;
-      margin: 0 2em 0 0;
-    }
-    &--round {
-      border-radius: 100%;
-    }
-    &--left {
-      float: left;
-      margin: 0 3em 2em 0;
-    }
-  }
-
-  .text {
-    &--align-center {
-      text-align: center;
-    }
-  }
+  
+    .list__item {
+      padding: 0 0.5rem
+    }    
+  }  
 }
