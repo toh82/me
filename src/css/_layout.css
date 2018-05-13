@@ -1,29 +1,35 @@
 .layout {
   margin-top: 2%;
   display: grid;
-  grid-template-columns: 4rem 1fr 1fr 4rem;
+  grid-template-rows: 4rem auto;
+  grid-template-columns: 1rem 3rem 1fr 1fr 3rem 1rem;
   grid-template-areas: 
-    "gapn navigation navigation navigation"  
-    "header header header header"
-    "headercontent headercontent headercontent headercontent"
-    "teaserslot teaserslot teaserslot teaserslot"
-    "main main main main"
-    "footer footer footer footer";  
+    ". gapn navigation navigation navigation ."  
+    "header header header header header header"
+    "headercontent headercontent headercontent headercontent headercontent headercontent"
+    ". teaserslot teaserslot teaserslot teaserslot ."
+    "main main main main main main"
+    "footer footer footer footer footer footer";  
 
   @media (--break-medium) {
-    grid-template-columns: 10% 6rem 1fr 1fr 1fr 4rem 2rem;
+    grid-template-rows: auto;
+    grid-template-columns: 8rem 6rem 20rem 1fr 1fr 4rem 2rem;
     grid-template-areas: 
       ". gapn navigation navigation social . ."  
       ". . header header header header header"
-      ". headercontent headercontent teaserslot teaserslot teaserslot ."
-      "main main main main main . ."
+      ". headercontent headercontent teaserslot teaserslot teaserslot teaserslot"
+      "main main main main main main main"
       ". footer footer footer footer footer footer";    
   }
 }
 
 .grid--project-teaser {
+  grid-template-columns: 1fr;
+  grid-template-areas: "image-big"
+  "text";
+
   @media (--break-medium) {
-    grid-template-columns: 10% 6rem 1fr 1fr 1fr 4rem;
+    grid-template-columns: 8rem 26rem 1fr 1fr 1fr 10rem;
     grid-template-areas: "image-big image-big text text text image-small";
   }
 }

@@ -17,6 +17,11 @@
     margin-top: 0;
     align-self: center;    
     text-align: right;
+    display: none;
+    
+    @media (--break-medium) {
+      display: block;
+    }
   }
 
   .info-box {
@@ -113,14 +118,31 @@
 
 
   .project-teaser {
-    &__navigation {
-      grid-area: navigation;
+    &__image-big {
+      grid-area: image-big;
     }
     &__text {
       grid-area: text;
     }
     &__image-small {
+      display: none;
       grid-area: image-small;
+
+      @media (--break-medium) {
+        display: block;
+      }
+    }
+    .stripe-img {
+      width: 10rem;
+      height: 433px;
+      overflow: hidden;
+
+      img {
+        width: unset;
+        max-width: unset;
+        height: 100%;
+        margin-left: -50%;
+      }
     }
   }
 }
