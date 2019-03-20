@@ -5,7 +5,7 @@
       "static": "https://static.toh82.de/"
     },
     "google_analytics": {
-      "active": true,
+      "active": false,
       "id": "UA-61312162-2"
     },
     "header": {
